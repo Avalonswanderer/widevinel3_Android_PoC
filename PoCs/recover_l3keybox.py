@@ -5,9 +5,7 @@ import sys
 import time
 
 def isKeybox(data):
-    if (data[0x78:0x7c] == [107, 98, 111, 120]): # "kbox" magic number
-        return True
-    return False
+    return (data[0x78:0x7c] == [107, 98, 111, 120]): # "kbox" magic number
 
 def printDeviceKey(keybox):
     deviceKey = [ str(hex(c)) for c in keybox[0x20:0x30]]
