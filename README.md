@@ -1,7 +1,5 @@
 # Widevine Android Overview & Widevine L3 Android RoT recovery PoC
 
-## Requirement
-
 Dependencies:
 
 - `Python3`
