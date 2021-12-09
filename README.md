@@ -20,9 +20,9 @@ new -> for Android 7 and above
 
 ## Proof-Of-Concept: Netflix Media Download and Widevine L3 Content Key & Keybox Recovery
 
-### Netflix Media Assets Download
+### Netflix Media Asset Download
 
-Download all content assests from Netflix (encrypted video, clear audio and subtitle). Launch the PoC once Netflix is running and select a media to stream.
+Download all content assets from Netflix (encrypted video, clear audio and subtitle). Launch the PoC once Netflix is running and select a media to stream.
 
 ```
 $ ./dump_media_assets_netflix.py <out_directory> [legacy|new]
