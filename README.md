@@ -1,6 +1,28 @@
-# Proof-Of-Concept: Netflix Media Download and Widevine L3 Content Key & Keybox Recovery
+# Widevine Android Overview & Widevine L3 Android RoT recovery PoC
 
-## Netflix Media Assets Download
+## Requirement
+
+Dependencies:
+
+- `Python3`
+- `python3-frida-tools` 
+
+In order to execute scripts, a Frida server needs to run on the targeted device with sufficient privileges for media system process inspection (e,g. media or root access).
+
+## Script Widevine Android Lightweight Control Flow Overview
+
+This control flow script aims to distinguish with certainty the usage of Widevine L1 and L3 mode wihtin Android devices. This lightweight overview hooks initialization and session creation with provisioning methods and decryption ones (both for CENC and generic purpose crypto methods), and dump transmitted buffers for further in-deph analysis. 
+
+```
+$ ./script.py [legacy|new]
+
+legacy -> for Android before Android 7
+new -> for Android 7 and above
+```
+
+## Proof-Of-Concept: Netflix Media Download and Widevine L3 Content Key & Keybox Recovery
+
+### Netflix Media Assets Download
 
 Download all content assests from Netflix (encrypted video, clear audio and subtitle). Launch the PoC once Netflix is running and select a media to stream.
 
@@ -11,7 +33,7 @@ legacy -> for Android before Android 7
 new -> for Android 7 and above
 ```
 
-## Widevine L3 Content Key Recovery
+### Widevine L3 Content Key Recovery
 
 L3 content key recovery PoC needs to be run with Widevine L3. The PEM cert is the PKCS#8 DER file decrypted in OEMCrypto_RewrapdeviceRSAKey converted to PEM.
 
@@ -22,7 +44,7 @@ legacy -> for Android before Android 7
 new -> for Android 7 and above
 ```
 
-## Widevine L3 Keybox Recovery
+### Widevine L3 Keybox Recovery
 
 Recover the Widevine L3 Keybox. Lauch the PoC and play a media using the Widevine DRM L3.
 
