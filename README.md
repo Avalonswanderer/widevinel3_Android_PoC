@@ -31,9 +31,9 @@ legacy -> for Android before Android 7
 new -> for Android 7 and above
 ```
 
-### Widevine L3 Content Key Recovery
+### Widevine Content Key Recovery
 
-L3 content key recovery PoC needs to be run with Widevine L3. The PEM cert is the PKCS#8 DER file decrypted in OEMCrypto_RewrapdeviceRSAKey converted to PEM.
+Content key recovery PoC to mimic the Widevine Key ladder starting from the Device RSA Key. The PEM cert is the PKCS#8 DER file decrypted in OEMCrypto_RewrapdeviceRSAKey converted to PEM.
 
 ```
 $ ./content_key_recovery.py [legacy|new] <pem file>
