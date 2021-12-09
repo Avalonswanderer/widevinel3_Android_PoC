@@ -18,7 +18,7 @@ legacy -> for Android before Android 7
 new -> for Android 7 and above
 ```
 
-## Proof-Of-Concept: Netflix Media Download and Widevine L3 Content Key & Keybox Recovery
+## Proof-Of-Concept: Netflix Media Download and Widevine Content Key & L3 Keybox Recovery
 
 ### Netflix Media Asset Download
 
