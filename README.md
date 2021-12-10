@@ -5,9 +5,9 @@ Dependencies:
 - `Python3`
 - `python3-frida-tools` 
 
-In order to execute scripts, a Frida server needs to run on the targeted device with sufficient privileges for media system process inspection (e,g. media or root access).
+In order to execute scripts, a Frida server needs to run on the targeted device with sufficient privileges for media system process inspection (e.g., media or root access).
 
-## Script Widevine Android Lightweight Control Flow Overview
+## Widevine Android Lightweight Control Flow Overview
 
 This control flow script aims to distinguish with certainty the usage of Widevine L1 and L3 mode wihtin Android devices. This lightweight overview hooks initialization and session creation with provisioning methods and decryption ones (both for CENC and generic purpose crypto methods), and dump transmitted buffers for further in-deph analysis. 
 
