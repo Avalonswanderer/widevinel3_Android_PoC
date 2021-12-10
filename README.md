@@ -20,7 +20,7 @@ new -> for Android 7 and above
 
 ## Proof-Of-Concept: Netflix Media Download and Widevine Content Key & L3 Keybox Recovery
 
-### Netflix Media Asset Download
+### Netflix Media Asset Download (L1 & L3)
 
 Download all content assets from Netflix (encrypted video, clear audio and subtitle). Launch the PoC once Netflix is running and select a media to stream.
 
@@ -31,7 +31,7 @@ legacy -> for Android before Android 7
 new -> for Android 7 and above
 ```
 
-### Widevine Content Key Recovery
+### Widevine Content Key Recovery (L1 & L3)
 
 Content key recovery PoC to mimic the Widevine Key ladder starting from the Device RSA Key. The PEM cert is the PKCS#8 DER file decrypted in OEMCrypto_RewrapdeviceRSAKey converted to PEM.
 
